@@ -1,0 +1,32 @@
+## Conceitos Básicos
+
+**Domínio** – Endereço virtual do site.  
+**Hospedagem** – Serviço que armazena os arquivos e dados do site, tornando-o acessível online.
+
+### Exemplo de URL
+https://www.github.com/gustavoguanabara
+
+- Protocolo: https://  
+- Subdomínio: www  
+- Domínio: github.com  
+- TLD: .com  
+- Caminho: gustavoguanabara  
+
+### Tecnologias Web
+- HTML – Conteúdo
+- CSS – Design
+- JavaScript – Interações
+
+### Exemplo de HTML
+```html
+<h1>Exemplo de título</h1>
+<p>Parágrafo</p>
+<img src="foto.png" alt="Exemplo de foto">
+
+## Exemplo de CSS
+
+h1 {
+    font-family: Arial;
+    font-size: 20pt;
+    color: blue;
+}

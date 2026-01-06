@@ -1,0 +1,37 @@
+=> ! + enter - Gera código base HTML.
+
+. Hirarquia de Título.
+> Quanto maior o número, menor o título.
+
+<h1> até <h6>
+<p> lorem <p> - lorem gera um texto teste.
+
+ ==============
+ <br> - Quebra de linha.
+ <hr> - Linha Orizontal.
+
+ <!-- Comentário -->
+
+ EMOGIPEDIA
+ -Para add emoji.
+
+ IMAGEM 
+ - Unsplash
+ - PEXELS
+                        GIMP- editor de imagens.
+FORMATOS
+- jpeg
+- png
+
+Carregar imagem 
+<img src="" alt=""> width - Largura
+                    height - Altura
+
+ICON
+- ICON ARCHIVE
+- Favicon.io 
+< link rel="shortcut icon" href="curso em vídeo.io"
+type="image/x-icon">
+
+============
+. Semântica - Os significados dos vocábulos, por oposição a sua forma.
