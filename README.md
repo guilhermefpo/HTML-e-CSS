@@ -6,7 +6,7 @@ Este repositório tem como objetivo documentar meu aprendizado em **HTML (HyperT
 Utilizar este repositório como base para estudos, práticas e futuros projetos, aplicando os conceitos aprendidos ao longo do tempo.
 
 ## Curso Base
-### Programação Web
+### Curso em Vídeo
 - Professor: Gustavo Guanabara.
 
 
