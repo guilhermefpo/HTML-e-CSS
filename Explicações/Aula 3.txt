@@ -1,0 +1,121 @@
+/* ================================ 
+   HTML: Principais Tags e Dicas Sênior
+   ================================ */
+
+/* ------------------------------
+   1️⃣ Negrito / Destaque
+   ------------------------------
+   <b>       → Apenas visual, sem significado semântico
+   <strong>  → Semântico, indica IMPORTÂNCIA do texto
+*/
+
+/* ------------------------------
+   2️⃣ Itálico / Ênfase
+   ------------------------------
+   <i>      → Apenas visual (estilizado em itálico)
+   <em>     → Semântico, indica ÊNFASE no texto
+*/
+
+/* ------------------------------
+   3️⃣ Texto marcado
+   ------------------------------
+   <mark>         → Destaque, por padrão amarelo
+   style inline:  <mark style="background-color: blue;">Azul</mark>
+   CSS externo: 
+       mark {
+           background-color: blue;
+       }
+   ⚠️ Use CSS externo sempre que possível
+*/
+
+/* ------------------------------
+   4️⃣ Citações
+   ------------------------------
+   <q>          → Citação curta, coloca aspas automaticamente
+   <blockquote> → Citação longa, bloco separado
+       cite="URL" → referencia a fonte da citação
+*/
+
+/* ------------------------------
+   5️⃣ Abreviações
+   ------------------------------
+   <abbr title="...">...</abbr>
+   Ex: <abbr title="HyperText Markup Language">HTML</abbr>
+*/
+
+/* ------------------------------
+   6️⃣ Listas
+   ------------------------------
+   Ordenadas:
+       <ol>
+           <li>Item 1</li>
+           <li>Item 2</li>
+       </ol>
+
+   Não ordenadas:
+       <ul>
+           <li>Item A</li>
+           <li>Item B</li>
+       </ul>
+*/
+
+/* ------------------------------
+   7️⃣ Links
+   ------------------------------
+   Externo: 
+       <a href="https://github.com" target="_blank" rel="noopener noreferrer">Meu Repositório</a>
+       💡 rel="noopener noreferrer" é mais seguro que rel="external"
+
+   Caminhos relativos:
+       ../   → volta uma pasta
+       ./    → mesma pasta
+       pasta/arquivo.html → dentro da pasta
+*/
+
+/* ------------------------------
+   8️⃣ Tags importantes de layout
+   ------------------------------
+   <header>   → topo da página, cabeçalho
+   <footer>   → rodapé
+   <section>  → seção semântica de conteúdo
+   <main>     → conteúdo principal da página
+   <article>  → conteúdo independente
+   <nav>      → navegação
+   <div>      → container genérico, não semântico
+   💡 Prefira tags semânticas sempre que possível
+*/
+
+/* ------------------------------
+   9️⃣ Vídeo
+   ------------------------------
+   <video> → incorpora vídeo na página
+   Atributos principais:
+       controls    → exibe controles de play/pause/volume
+       autoplay    → inicia automaticamente
+       loop        → repete ao terminar
+       muted       → inicia sem som
+       poster="..." → imagem exibida antes de tocar
+
+   Exemplo:
+       <video width="640" height="360" controls>
+           <source src="video.mp4" type="video/mp4">
+           Seu navegador não suporta vídeo.
+       </video>
+   ⚡ Dicas sênior:
+       - Sempre forneça múltiplos formatos (.mp4, .webm, .ogg)
+       - Inclua fallback de texto
+       - Use poster para otimizar UX
+*/
+
+/* ------------------------------
+   10️⃣ Dicas gerais sênior
+   ------------------------------
+   - Sempre use CSS externo em vez de inline
+   - Use box-sizing: border-box para controlar tamanho com padding/border
+   - Prefira unidades relativas (%, rem, vh/vw) para responsividade
+   - Evite <div> desnecessários, use tags semânticas
+   - Sempre configure alt em imagens e legendas em vídeos para acessibilidade
+   - Teste layouts em diferentes telas (mobile-first)
+*/
+
+

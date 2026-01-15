@@ -1,0 +1,24 @@
+div {
+    display: inline;
+}
+
+p {
+    display: inline;
+}
+
+span {
+    display: block;
+}
+
+/*  ❌ inline → não muda tamanho
+
+✅ block ou inline-block → muda tamanho
+
+🔥 flex → organiza outros elementos  */
+
+/*
+     Quebra linha?
+inline	        ❌ não
+inline-block	❌ não
+block	        ✅ sim         
+flex	        ✅ sim  */

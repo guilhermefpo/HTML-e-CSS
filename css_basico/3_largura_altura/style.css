@@ -1,0 +1,48 @@
+/* width - largura 
+height   - altura 
+
+min-width
+max-width
+
+min-height
+max-height */
+
+/* ✅ CHECKLIST RÁPIDO — ALTURA & LARGURA (CSS SÊNIOR)
+
+1️⃣ O display aceita tamanho?
+   - ❌ inline
+   - ✅ block | inline-block | flex | grid
+
+2️⃣ Box model configurado?
+   - ✔ box-sizing: border-box;
+
+3️⃣ Estou usando width/height certo?
+   - width / height
+   - min-width / max-width
+   - min-height / max-height
+
+4️⃣ Unidade correta?
+   - px → fixo
+   - %  → depende do pai
+   - rem → padrão de fonte
+   - vw/vh → tamanho da tela
+
+5️⃣ height: 100% funciona?
+   - ❗ pai PRECISA ter altura definida
+
+6️⃣ Layout responsivo?
+   - width: 100%;
+   - max-width definido
+
+7️⃣ Altura da tela?
+   - min-height: 100dvh; (moderno)
+
+8️⃣ Conteúdo pode estourar?
+   - overflow: hidden | auto | scroll
+
+*/
+
+
+   .d1 {
+    width: 150px;  
+   }

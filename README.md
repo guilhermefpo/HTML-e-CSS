@@ -9,6 +9,10 @@ Utilizar este repositório como base para estudos, práticas e futuros projetos,
 ### Curso em Vídeo
 - Professor: Gustavo Guanabara.
 
+## Curso revisão
+### Jornada do Dev
+- CSS3 Básico.
+
 
 ## Status
 📘 Em constante aprendizado e atualização.
