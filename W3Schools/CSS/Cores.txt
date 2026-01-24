@@ -1,0 +1,84 @@
+╔══════════════════════════════════════╗
+║               CORES                 ║
+╚══════════════════════════════════════╝
+
+As cores em CSS são usadas para definir
+a aparência visual dos elementos, como
+fundo, texto e bordas.
+
+═══════════════════════════════════════
+1️⃣ Cor de Fundo
+═══════════════════════════════════════
+Define a cor de fundo de um elemento.
+
+Propriedade: background-color
+
+Exemplo:
+
+p {
+  background-color: lightblue;
+}
+
+═══════════════════════════════════════
+2️⃣ Cor do Texto
+═══════════════════════════════════════
+Define a cor do texto de um elemento.
+
+Propriedade: color
+
+Exemplo:
+
+p {
+  color: red;
+}
+
+═══════════════════════════════════════
+3️⃣ Cor da Borda
+═══════════════════════════════════════
+Define a cor e o estilo da borda
+de um elemento.
+
+Propriedade: border
+
+Sintaxe:
+border: largura estilo cor;
+
+Exemplo:
+
+p {
+  border: 2px solid violet;
+}
+
+═══════════════════════════════════════
+4️⃣ Formatos de Cores
+═══════════════════════════════════════
+O CSS suporta diferentes formatos
+para definição de cores:
+
+✔ Nome da cor
+Exemplo:
+color: blue;
+
+✔ RGB (Red, Green, Blue)
+Exemplo:
+color: rgb(255, 0, 0);
+
+✔ RGBA (com transparência)
+Exemplo:
+color: rgba(255, 0, 0, 0.5);
+
+✔ HEX (Hexadecimal)
+Exemplo:
+color: #ff0000;
+
+✔ HSL (Hue, Saturation, Lightness)
+Exemplo:
+color: hsl(0, 100%, 50%);
+
+═══════════════════════════════════════
+💡 Dicas
+═══════════════════════════════════════
+✔ Use cores com bom contraste  
+✔ Prefira RGBA ou HSL quando precisar
+  de transparência ou controle visual  
+✔ Mantenha um padrão de cores no projeto

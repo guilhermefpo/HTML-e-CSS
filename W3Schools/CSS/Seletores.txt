@@ -1,0 +1,95 @@
+╔══════════════════════════════════════╗
+║           SELETORES CSS              ║
+╚══════════════════════════════════════╝
+
+Os seletores CSS são usados para selecionar os elementos HTML
+que você deseja estilizar.
+
+═══════════════════════════════════════
+1️⃣ Seletor de Elemento
+═══════════════════════════════════════
+Seleciona todos os elementos HTML de um
+determinado tipo.
+
+Exemplo: seleciona todos os parágrafos.
+
+p {
+  color: blue;
+}
+
+═══════════════════════════════════════
+2️⃣ Seletor de ID
+═══════════════════════════════════════
+O seletor de ID é usado para selecionar
+UM elemento único na página.
+
+⚠️ Um ID não deve ser repetido.
+
+Sintaxe: #nomeDoId
+
+Exemplo:
+
+#para1 {
+  color: blue;
+}
+
+═══════════════════════════════════════
+3️⃣ Seletor de Classe
+═══════════════════════════════════════
+O seletor de classe pode ser usado para
+selecionar um ou vários elementos.
+
+Sintaxe: .nomeDaClasse
+
+Exemplo:
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+➡️ Também é possível aplicar a classe
+apenas a um tipo específico de elemento.
+
+Exemplo: apenas parágrafos com a classe "center".
+
+p.center {
+  text-align: center;
+  color: red;
+}
+
+═══════════════════════════════════════
+4️⃣ Seletor Universal
+═══════════════════════════════════════
+Seleciona TODOS os elementos da página.
+
+Sintaxe: *
+
+Exemplo:
+
+* {
+  text-align: center;
+  color: blue;
+}
+
+═══════════════════════════════════════
+5️⃣ Seletor de Agrupamento
+═══════════════════════════════════════
+Permite aplicar o mesmo estilo a vários
+elementos ao mesmo tempo, ajudando a
+minimizar o código.
+
+Exemplo:
+
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+
+═══════════════════════════════════════
+💡 Boas Práticas
+═══════════════════════════════════════
+✔ Use um editor de código com realce de sintaxe  
+✔ Valide seu CSS com um linter ou validador  
+✔ Escreva CSS em pequenas seções  
+✔ Teste com frequência
