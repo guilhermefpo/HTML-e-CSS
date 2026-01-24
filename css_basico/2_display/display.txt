@@ -1,0 +1,56 @@
+==================== INLINE, INLINE-BLOCK E BLOCK ====================
+
+No CSS, a propriedade **display** define **como um elemento ocupa espaço** na página.  
+
+-----------------------------------------------
+1️⃣ BLOCK
+-----------------------------------------------
+- Ocupa **toda a largura disponível** do contêiner.  
+- **Quebra linha antes e depois** do elemento.  
+- Permite definir **width** e **height**.  
+- Exemplos: <div>, <p>, <h1>
+
+Exemplo CSS:
+div {
+  display: block;
+  width: 200px;
+  height: 100px;
+}
+
+-----------------------------------------------
+2️⃣ INLINE
+-----------------------------------------------
+- Ocupa **apenas o espaço necessário pelo conteúdo**.  
+- **Não quebra linha** antes ou depois.  
+- **Não permite width ou height**.  
+- Exemplos: <span>, <a>, <strong>
+
+Exemplo CSS:
+span {
+  display: inline;
+  /* width e height não funcionam */
+}
+
+-----------------------------------------------
+3️⃣ INLINE-BLOCK
+-----------------------------------------------
+- Combina características de block e inline:  
+  - Comportamento inline (não quebra linha)  
+  - Permite width e height como block  
+- Útil para elementos que precisam **ficar na mesma linha** mas com **tamanho controlável**.
+
+Exemplo CSS:
+button {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+}
+
+-----------------------------------------------
+💡 Dicas práticas
+-----------------------------------------------
+- **Block** → ideal para containers e seções.  
+- **Inline** → ideal para texto ou elementos em linha.  
+- **Inline-block** → ideal quando quer **controle de tamanho** e posicionamento em linha.  
+
+================================================

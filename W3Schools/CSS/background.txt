@@ -1,0 +1,32 @@
+=== backgrounds
+
+== Cor de fundo de um elemento.
+. background-color
+
+== Opacidade / Transparência
+. Pode assumir valores de 0,0 a 1,0. Quanto menor o valor, mais transparente.
+
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+
+== Usando rgba
+. Um valor de cor RGBA é especificado com: rgba (vermelho, verde, azul, alfa). O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco).
+
+div {
+  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+
+== Imagem de fundo.
+.  imagem para usar como fundo de um elemento.
+. background-image
+
+body {
+  background-image: url("paper.gif");
+}
+
+== Abreviação.
+. Use para definir mais de uma propriedade, background.
+. background:
+

@@ -1,0 +1,27 @@
+==================== MARGIN ====================
+
+A propriedade **margin** é utilizada para definir a **margem externa** de um elemento, ou seja, o espaço entre o elemento e seus elementos vizinhos.
+
+Propriedades individuais:
+- **margin-top**: define a margem superior do elemento.
+- **margin-right**: define a margem direita do elemento.
+- **margin-bottom**: define a margem inferior do elemento.
+- **margin-left**: define a margem esquerda do elemento.
+
+Valores possíveis:
+- **auto**: o navegador calcula a margem automaticamente.
+- **Comprimento**: especifica uma margem em unidades como px, pt, cm, etc.
+- **%**: define a margem como percentual da largura do elemento pai.
+- **inherit**: a margem será herdada do elemento pai.
+
+Abreviação:
+- É possível definir todas as margens de uma vez utilizando **margin**.
+- Recomenda-se declarar 1, 2 ou todas as 4 propriedades, dependendo da necessidade.
+
+Ordem das propriedades (quando abreviadas):
+1. **margin-top**
+2. **margin-right**
+3. **margin-bottom**
+4. **margin-left**
+
+================================================

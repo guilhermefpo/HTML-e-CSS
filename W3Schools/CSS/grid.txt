@@ -1,0 +1,57 @@
+==================== CSS GRID ====================
+
+O **CSS Grid** é um sistema de layout **bidimensional**, ou seja, permite organizar elementos **em linhas e colunas** simultaneamente.  
+É ideal para layouts mais complexos, onde Flexbox sozinho não é suficiente.
+
+-----------------------------------------------
+1️⃣ Conceito básico
+-----------------------------------------------
+- O **contêiner Grid** controla linhas e colunas.  
+- Cada item dentro do contêiner ocupa **uma célula (grid cell)** ou várias células.  
+- Grid é ótimo para **layouts estruturados**, enquanto Flexbox é melhor para **alinhamento e distribuição em uma dimensão**.
+
+-----------------------------------------------
+2️⃣ Propriedades do contêiner (pai)
+-----------------------------------------------
+- **display: grid;** → ativa o grid no contêiner.  
+- **grid-template-columns** → define as colunas do grid:  
+  - Exemplo: `grid-template-columns: 100px 200px 1fr;`  
+    - 3 colunas: 100px, 200px e o restante do espaço (`1fr`)  
+- **grid-template-rows** → define as linhas do grid.  
+- **gap / column-gap / row-gap** → define o **espaçamento entre linhas e colunas**.  
+- **grid-auto-rows / grid-auto-columns** → define o tamanho de linhas ou colunas adicionais criadas automaticamente.  
+- **justify-items** → alinha os itens horizontalmente dentro da célula.  
+- **align-items** → alinha os itens verticalmente dentro da célula.  
+- **justify-content** → alinha todo o grid horizontalmente dentro do contêiner.  
+- **align-content** → alinha todo o grid verticalmente dentro do contêiner.  
+
+-----------------------------------------------
+3️⃣ Propriedades dos itens (filhos)
+-----------------------------------------------
+- **grid-column / grid-row** → define em qual coluna/linha o item começa e termina.  
+  - Exemplo: `grid-column: 1 / 3;` → ocupa da coluna 1 até antes da coluna 3  
+- **justify-self** → alinha o item horizontalmente dentro da célula.  
+- **align-self** → alinha o item verticalmente dentro da célula.  
+
+-----------------------------------------------
+4️⃣ Unidades especiais do Grid
+-----------------------------------------------
+- **fr (fraction)** → fração do espaço disponível.  
+  - Exemplo: `grid-template-columns: 1fr 2fr;` → segunda coluna ocupa o dobro da primeira.  
+- **auto** → tamanho automático baseado no conteúdo.  
+- **minmax(min, max)** → define tamanho mínimo e máximo.  
+  - Exemplo: `minmax(100px, 1fr)`  
+
+💡 **Exemplo prático:**
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 200px;
+  gap: 10px;
+}
+
+.item1 {
+  grid-column: 1 / 3; /* ocupa a 1ª e 2ª coluna */
+  grid-row: 1 / 2;    /* ocupa a 1ª linha */
+}

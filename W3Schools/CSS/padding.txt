@@ -1,0 +1,26 @@
+==================== PADDING ====================
+
+A propriedade **padding** define o **espaço interno** de um elemento, ou seja, a distância entre o conteúdo do elemento e sua borda.
+
+Propriedades individuais:
+- **padding-top**: define o espaço interno superior do elemento.
+- **padding-right**: define o espaço interno direito do elemento.
+- **padding-bottom**: define o espaço interno inferior do elemento.
+- **padding-left**: define o espaço interno esquerdo do elemento.
+
+Valores possíveis:
+- **Comprimento**: especifica o padding em unidades como px, pt, cm, etc.
+- **%**: define o padding como percentual da largura do elemento pai.
+- **inherit**: o padding será herdado do elemento pai.
+
+Abreviação:
+- É possível definir todos os paddings de uma vez utilizando **padding**.
+- Recomenda-se declarar 1, 2 ou todas as 4 propriedades, dependendo da necessidade.
+
+Ordem das propriedades (quando abreviadas):
+1. **padding-top**
+2. **padding-right**
+3. **padding-bottom**
+4. **padding-left**
+
+================================================

@@ -1,0 +1,59 @@
+==================== FLEXBOX ====================
+
+O **Flexbox (Flexible Box Layout)** é um modelo de layout do CSS que facilita **alinhamento, distribuição de espaço e ordenação de elementos dentro de um contêiner**, mesmo quando o tamanho dos elementos é desconhecido ou dinâmico.
+
+-----------------------------------------------
+1️⃣ Conceito básico
+-----------------------------------------------
+- Flexbox atua em **um contêiner e seus itens filhos**.  
+- O contêiner controla a direção, o alinhamento e o espaçamento dos itens.  
+- Cada item dentro do contêiner pode se ajustar automaticamente.
+
+-----------------------------------------------
+2️⃣ Propriedades do contêiner (pai)
+-----------------------------------------------
+- **display: flex;** → ativa o flexbox no contêiner.  
+- **flex-direction** → define a direção dos itens:  
+  - `row` (padrão) → da esquerda para a direita  
+  - `row-reverse` → da direita para a esquerda  
+  - `column` → de cima para baixo  
+  - `column-reverse` → de baixo para cima  
+- **justify-content** → alinha os itens **horizontalmente** (na direção do eixo principal):  
+  - `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`  
+- **align-items** → alinha os itens **verticalmente** (eixo cruzado):  
+  - `flex-start`, `flex-end`, `center`, `baseline`, `stretch`  
+- **align-content** → alinha **linhas de itens** quando há múltiplas linhas (apenas com `flex-wrap: wrap`)  
+- **flex-wrap** → controla se os itens quebram a linha:  
+  - `nowrap` (padrão), `wrap`, `wrap-reverse`  
+
+-----------------------------------------------
+3️⃣ Propriedades dos itens (filhos)
+-----------------------------------------------
+- **order** → define a ordem de exibição dos itens (número crescente).  
+- **flex-grow** → define **quanto o item cresce** em relação aos outros.  
+- **flex-shrink** → define **quanto o item encolhe** se não houver espaço suficiente.  
+- **flex-basis** → define o tamanho inicial do item antes de crescer ou encolher.  
+- **align-self** → sobrescreve o **align-items** para um item específico.  
+
+-----------------------------------------------
+4️⃣ Vantagens do Flexbox
+-----------------------------------------------
+- Layout **responsivo e adaptável** sem precisar de floats ou position.  
+- **Centralização fácil** de elementos horizontal e verticalmente.  
+- Distribuição de espaço **dinâmica entre itens**.  
+- Reordenação de elementos sem alterar o HTML (usando `order`).  
+
+💡 **Exemplo prático:**
+```css
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1; /* cresce igualmente */
+  margin: 10px;
+}

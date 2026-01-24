@@ -1,0 +1,38 @@
+==================== UNIDADES CSS ====================
+
+No CSS, as dimensões podem ser definidas usando **unidades absolutas** ou **relativas**. Escolher a unidade correta é essencial para layout, responsividade e acessibilidade.
+
+1. **px (pixels)**  
+   - Unidade **absoluta**, fixa.  
+   - Exemplo: `width: 200px;`  
+   - Uso ideal: elementos que precisam de **tamanho fixo**, como bordas, ícones ou imagens.  
+   - ⚠️ Desvantagem: não escala com o tamanho da fonte do usuário (pode prejudicar acessibilidade).
+
+2. **em**  
+   - Unidade **relativa** ao **tamanho da fonte do elemento pai**.  
+   - Exemplo: `padding: 2em;` → equivale a 2 vezes o tamanho da fonte do elemento pai.  
+   - Uso ideal: espaçamentos e dimensões **proporcionais ao texto**, útil para layouts flexíveis.  
+
+3. **rem (root em)**  
+   - Unidade **relativa** ao **tamanho da fonte do elemento raiz (`<html>`)**.  
+   - Exemplo: `font-size: 1.5rem;` → 1.5 vezes o tamanho da fonte do `<html>`.  
+   - Uso ideal: manter **consistência de tamanho em todo o site**, independentemente do contexto do elemento.
+
+4. **% (percentual)**  
+   - Unidade **relativa ao elemento pai** (largura ou altura).  
+   - Exemplo: `width: 50%;` → metade da largura do elemento pai.  
+   - Uso ideal: layouts **responsivos**, colunas e imagens flexíveis.
+
+5. **vh / vw (viewport height / width)**  
+   - Unidade **relativa à janela de visualização**.  
+   - `1vh` = 1% da altura da tela, `1vw` = 1% da largura da tela.  
+   - Uso ideal: layouts que **precisam ocupar porcentagem da tela**, como banners ou seções de página inteira.
+
+💡 **Dicas práticas:**  
+- Use **px** para elementos que precisam ser precisos e fixos.  
+- Use **em** para **proporcionalidade relativa ao texto** e herança local.  
+- Use **rem** para **consistência global de tamanhos**.  
+- Use **%** para elementos dentro de contêineres, **responsivos**.  
+- Use **vh/vw** para layouts que dependem da **tela inteira**, como hero sections.
+
+================================================

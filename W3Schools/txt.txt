@@ -1,0 +1,107 @@
+==================== PAI E FILHO ====================
+
+No HTML e CSS, os termos **pai** e **filho** descrevem a **hierarquia entre elementos** no DOM (Document Object Model).
+
+-----------------------------------------------
+1️⃣ Conceito básico
+-----------------------------------------------
+- **Pai (parent)**: elemento que **contém outros elementos**.  
+- **Filho (child)**: elemento que **está dentro de outro elemento**.  
+
+Exemplo HTML:
+<div class="pai">
+  <p class="filho">Eu sou filho</p>
+  <span class="filho">Eu também sou filho</span>
+</div>
+
+- `<div class="pai">` → **pai**  
+- `<p>` e `<span>` → **filhos**
+
+-----------------------------------------------
+2️⃣ Relações no CSS
+-----------------------------------------------
+- O pai pode **controlar layout e alinhamento dos filhos**:  
+  - `display: flex` ou `display: grid`  
+  - `justify-content`, `align-items`, `gap`  
+- Os filhos podem **herdar propriedades** do pai ou sobrescrever valores específicos.
+
+Exemplo CSS:
+.pai {
+  display: flex;
+  justify-content: center; /* centraliza filhos horizontalmente */
+  background-color: #f0f0f0;
+}
+
+.filho {
+  margin: 10px;
+  padding: 5px;
+  background-color: #c0c0ff;
+}
+
+-----------------------------------------------
+3️⃣ Conceitos adicionais
+-----------------------------------------------
+- Um pai pode ter **múltiplos filhos**.  
+- Cada filho tem **apenas um pai direto**.  
+- É possível ter **filhos dentro de filhos** (pai → filho → neto).
+
+Exemplo HTML:
+<div class="pai">
+  <div class="filho">
+    <p class="neto">Eu sou neto</p>
+  </div>
+</div>
+
+💡 **Resumo rápido:**  
+- Pai = contém outros elementos  
+- Filho = está dentro de um pai  
+- Propriedades do pai podem influenciar os filhos (layout, alinhamento, etc.)
+
+================================================
+
+==================== PAI X FILHO ====================
+
+No CSS, algumas propriedades são **mais eficazes quando aplicadas ao contêiner (pai)**, e outras **são aplicadas diretamente aos itens (filhos)**.
+
+-----------------------------------------------
+1️⃣ Propriedades que geralmente vão no PAI
+-----------------------------------------------
+- **Layout e distribuição**
+  - `display` → flex, grid, block, inline-block  
+  - `flex-direction` → row, column (Flexbox)  
+  - `flex-wrap` → nowrap, wrap (Flexbox)  
+  - `justify-content` → alinha itens horizontalmente (Flexbox/Grid)  
+  - `align-items` → alinha itens verticalmente (Flexbox/Grid)  
+  - `align-content` → alinha linhas de itens (Grid/Flex multi-linha)  
+  - `gap` / `column-gap` / `row-gap` → espaçamento entre itens  
+- **Tamanho e posicionamento do contêiner**
+  - `width`, `height`, `max-width`, `min-width`, `max-height`, `min-height`  
+  - `padding` → cria espaço interno do contêiner  
+  - `margin` → afeta espaço externo do contêiner  
+- **Outras propriedades de grupo**
+  - `background`, `border`, `overflow`, `position` (relativo ao contêiner)
+
+-----------------------------------------------
+2️⃣ Propriedades que geralmente vão no FILHO
+-----------------------------------------------
+- **Tamanho e crescimento**
+  - `width`, `height`, `max-width`, `min-width`, `max-height`, `min-height`  
+  - `flex-grow`, `flex-shrink`, `flex-basis` (Flexbox)  
+  - `grid-column`, `grid-row` (Grid)  
+- **Alinhamento individual**
+  - `align-self` → sobrescreve `align-items` do pai  
+  - `justify-self` → alinha horizontalmente na célula (Grid)  
+- **Espaçamento interno e externo**
+  - `margin`, `padding`  
+- **Ordem e visibilidade**
+  - `order` (Flexbox)  
+  - `display`, `visibility`, `opacity`  
+
+-----------------------------------------------
+💡 Dica prática
+-----------------------------------------------
+- **Pai controla:** layout, direção, alinhamento e distribuição do grupo de itens.  
+- **Filho controla:** tamanho individual, crescimento, alinhamento específico e estilo próprio.  
+- **Combinação:** usar corretamente pai + filho garante **layout flexível, responsivo e consistente**.
+
+================================================

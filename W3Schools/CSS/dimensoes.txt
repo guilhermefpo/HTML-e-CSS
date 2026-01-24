@@ -1,0 +1,33 @@
+==================== DIMENSÕES ====================
+
+No CSS, as propriedades de **altura e largura** controlam o tamanho de um elemento.
+
+1. **height**  
+   - Define a **altura** de um elemento.  
+   - Valores possíveis:  
+     - **Comprimento** (px, em, rem, cm, etc.)  
+     - **%** (percentual em relação ao elemento pai)  
+     - **auto** (o navegador calcula a altura automaticamente)  
+     - **inherit** (herda a altura do elemento pai)  
+
+2. **width**  
+   - Define a **largura** de um elemento.  
+   - Valores possíveis:  
+     - **Comprimento** (px, em, rem, cm, etc.)  
+     - **%** (percentual em relação ao elemento pai)  
+     - **auto** (o navegador calcula a largura automaticamente)  
+     - **inherit** (herda a largura do elemento pai)  
+
+3. **max-width**  
+   - Define a **largura máxima** que um elemento pode ter.  
+   - Evita que o elemento ultrapasse um determinado tamanho, mesmo se o conteúdo ou a largura do pai aumentar.  
+   - Valores possíveis:  
+     - **Comprimento** (px, em, rem, etc.)  
+     - **%** (percentual em relação ao elemento pai)  
+     - **none** (sem limite máximo)  
+
+💡 **Dica profissional:**  
+- Use **width** e **height** para definir dimensões fixas.  
+- Use **max-width** para tornar elementos **responsivos**, garantindo que não ultrapassem certos limites em telas grandes.  
+
+================================================

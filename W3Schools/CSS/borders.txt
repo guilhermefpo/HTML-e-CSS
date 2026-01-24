@@ -1,0 +1,13 @@
+=== Borders
+
+. Especifique o estilo, a largura e a cor da borda de um elemento.
+
+. A propriedade é uma abreviação para as seguintes propriedades individuais de fronteira: border
+
+= border-width
+= border-style (obrigatório)
+= border-color
+
+p {
+  border: 5px solid red;
+}
