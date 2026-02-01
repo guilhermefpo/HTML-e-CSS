@@ -1,0 +1,27 @@
+== Box Model
+
+- Aninhamento = Caixas dentro de caixas.
+
+- Todo elemento visivel dentro de um site é uma caixa.
+
+Altura: height
+Largura: whidth
+
+Borda: border, uma linha que circula seu conteúdo.
+
+preenchimento: padding, atributo que da distância a borda e a caixa do conteúdo. (Espaço interno).
+
+Margem: margin, espaço da borda para fora. (Espaço externo).
+
+Traçado: outline, linha que circula o conteúdo depois do border.
+
+= Tipos de caixa
+
+- Box-level
+. Sempre inicia numa linha nova.
+. Cobre sempre 100% da largura da tela.
+
+- Inline-level
+. Ele não quebra a linha.
+. Ocupa o tamanho que ele precisa.
+. E da continuidade ao conteúdo na mesma linha.
