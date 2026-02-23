@@ -1,0 +1,12 @@
+grid container - parte de fora
+
+grid item - Junção dessas areas, cada uma das interceções.
+
+grid track - itens do inicio até o final da linha.
+- Quando as tracks se chocam uma na outra, o choque é um item de grade.
+
+row track - trilha da linha(deitado).
+
+column track - trilha de coluna.
+
+grid lines - linhas entre os itens.

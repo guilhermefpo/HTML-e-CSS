@@ -1,0 +1,11 @@
+- display: grid;
+- grid-template-columns = (auto auto) = 2 colunas / (auto auto auto) = 3 colunas
+- grid-tamplete-rows = (100px 100px 100px)
+- grid-gap = 20px espaços entre os itens.
+
+div.caontainer {
+    display: grid;
+    grid-tamplete-columns: auto auto;
+    grid-tamplete-rows: 100px 100px 100px;
+    grid-gap: 20px;
+}
