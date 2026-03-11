@@ -1,11 +1,44 @@
-- display: grid;
-- grid-template-columns = (auto auto) = 2 colunas / (auto auto auto) = 3 colunas
-- grid-tamplete-rows = (100px 100px 100px)
-- grid-gap = 20px espaços entre os itens.
+/* ==============================
+   CSS GRID – Guia Completo
+   ============================== */
 
-div.caontainer {
-    display: grid;
-    grid-tamplete-columns: auto auto;
-    grid-tamplete-rows: 100px 100px 100px;
-    grid-gap: 20px;
+div.container {
+    display: grid; /* ativa o grid */
+    
+    /* 1️⃣ Colunas e linhas */
+    grid-template-columns: auto auto;       /* 2 colunas automáticas */
+    grid-template-rows: 100px 100px 100px; /* 3 linhas de 100px cada */
+    
+    /* 2️⃣ Espaçamento */
+    gap: 20px; /* espaço entre colunas e linhas */
+
+    /* 3️⃣ Alinhamento de itens individuais */
+    align-items: center;     /* eixo vertical dentro da célula */
+    justify-items: center;   /* eixo horizontal dentro da célula */
+
+    /* 4️⃣ Alinhamento do grid como um todo */
+    align-content: start;    /* eixo vertical do grid completo */
+    justify-content: start;  /* eixo horizontal do grid completo */
+
+    /* 5️⃣ Atalhos */
+    place-items: center stretch;     /* align-items + justify-items */
+    place-content: center space-between; /* align-content + justify-content */
 }
+
+/* 6️⃣ Propriedades automáticas */
+div.container {
+    grid-auto-rows: 150px;    /* altura de novas linhas criadas automaticamente */
+    grid-auto-columns: 100px; /* largura de novas colunas criadas automaticamente */
+}
+
+/* 7️⃣ Funções avançadas */
+div.container {
+    grid-template: 100px 200px / 1fr 2fr;  /* shorthand de linhas / colunas */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais usando repeat() */
+}
+
+/* 8️⃣ Unidades de medida */
+1fr /* fração do espaço disponível no grid */
+auto /* se ajusta ao conteúdo */
+px   /* valor fixo em pixels */
+%    /* valor relativo à largura ou altura do container */
